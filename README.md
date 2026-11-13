@@ -1,12 +1,18 @@
 # Homepage
 
-Site personnel statique : HTML et CSS, sans build ni dépendance.
+Site personnel statique, en HTML, CSS et JavaScript, sans framework ni build.
+
+Réalisé comme projet final du module A (WebDev Foundation) du cours
+« D3 ❤️ React » de Yan Holtz, avec l'inspiration de
+[ckntav.github.io](https://ckntav.github.io/).
 
 ## Structure
 
 ```
-index.html    page unique, sections Projets / Parcours / Contact
-styles.css    feuille de style, thème clair et sombre via prefers-color-scheme
+index.html    page unique : accueil, à propos, projets, contact
+styles.css    thème clair/sombre, mise en page responsive
+main.js       thème persistant, menu mobile, champ de particules, typewriter, révélations au scroll
+favicon.svg   monogramme
 ```
 
 ## Prévisualisation locale

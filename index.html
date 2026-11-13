@@ -1,104 +1,194 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" data-theme="light">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stéphane Roos</title>
-    <meta name="description" content="Ingénieur industriel, data et visualisation. Travaux, projets open source et notes.">
+    <title>Stéphane Roos | Ingénieur industriel et dataviz</title>
+    <meta
+      name="description"
+      content="Ingénieur industriel, passé à la donnée et à la visualisation. Projets open source, parcours et contact."
+    >
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    >
     <link rel="stylesheet" href="styles.css">
+    <script>
+      // Applied before first paint to avoid a theme flash.
+      (function () {
+        var stored = localStorage.getItem("theme");
+        var dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        document.documentElement.dataset.theme = stored || (dark ? "dark" : "light");
+      })();
+    </script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top">Stéphane Roos</a>
-      <nav>
-        <a href="#projets">Projets</a>
-        <a href="#parcours">Parcours</a>
-        <a href="#contact">Contact</a>
-      </nav>
+    <nav class="navbar">
+      <div class="nav-container">
+        <a class="nav-brand" href="#accueil">Stéphane Roos</a>
+
+        <ul class="nav-links" id="nav-links">
+          <li><a href="#a-propos">à propos</a></li>
+          <li><a href="#projets">projets</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+
+        <div class="nav-actions">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le thème clair ou sombre">
+            <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="12" cy="12" r="5" />
+              <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
+            </svg>
+          </button>
+          <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <header class="hero" id="accueil">
+      <canvas class="hero-canvas" id="particles" aria-hidden="true"></canvas>
+      <div class="hero-content">
+        <p class="hero-kicker mono">ingénieur civil électromécanicien</p>
+        <h1 class="hero-title">Bonjour, je suis <strong>Stéphane</strong>.</h1>
+        <p class="hero-subtitle">
+          <span id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#projets">Voir les projets</a>
+          <a class="btn btn-ghost" href="https://github.com/StephRoos" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+      <a class="scroll-hint" href="#a-propos" aria-label="Descendre vers la section à propos">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 5v14M5 12l7 7 7-7" />
+        </svg>
+      </a>
     </header>
 
-    <main id="top">
-      <section class="hero">
-        <h1>Ingénieur industriel, data et visualisation</h1>
-        <p class="lead">
-          Vingt-cinq ans de production et de maintenance industrielle, passés au crible de la donnée.
-          Je construis des outils qui rendent un procédé lisible : courbes de charge, dashboards,
-          modèles prédictifs.
-        </p>
-        <ul class="links">
-          <li><a href="https://github.com/StephRoos">GitHub</a></li>
-          <li><a href="#projets">Projets</a></li>
-        </ul>
+    <main>
+      <section class="section section-alt" id="a-propos">
+        <div class="container reveal">
+          <div class="about-grid">
+            <div class="about-mark" aria-hidden="true">SR</div>
+            <div class="about-text">
+              <h2 class="section-title">À propos</h2>
+              <p class="about-subtitle mono">ingénieur industriel × données × pédagogie</p>
+              <p>
+                Vingt-cinq ans de production et de maintenance, multi-sites, avec des passages en Inde
+                et en Chine. Depuis 2020 chez Höganäs, en charge de la durabilité et des services
+                analytiques du site d'Ath.
+              </p>
+              <p>
+                Côté données : Python, pandas, scikit-learn, SQL, D3. Le fil rouge ne change pas,
+                comprendre un système physique et le rendre lisible à ceux qui le pilotent.
+              </p>
+              <div class="keywords">
+                <span class="kw">industrial engineering</span>
+                <span class="kw">data science</span>
+                <span class="kw">dataviz</span>
+                <span class="kw">python</span>
+                <span class="kw">d3.js</span>
+                <span class="kw">energy</span>
+              </div>
+              <p class="location">basé en Belgique, ouvert au télétravail</p>
+            </div>
+          </div>
+        </div>
       </section>
 
-      <section id="projets">
-        <h2>Projets</h2>
-        <ul class="cards">
-          <li>
-            <a class="card" href="https://github.com/StephRoos/courbe-de-charge">
+      <section class="section" id="projets">
+        <div class="container">
+          <h2 class="section-title reveal">Projets</h2>
+          <div class="cards">
+            <a
+              class="card reveal"
+              href="https://github.com/StephRoos/courbe-de-charge"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="card-tag mono">dataviz</span>
               <h3>Courbe de charge</h3>
               <p>
-                Ce que votre courbe de charge essaie de vous dire : une visualisation du dataset
-                ELMAS pour le management de l'énergie industrielle.
+                Ce que votre courbe de charge essaie de vous dire : une visualisation du dataset ELMAS
+                pour le management de l'énergie industrielle.
               </p>
-              <span class="tag">Dataviz</span>
+              <span class="card-link">Voir le dépôt →</span>
             </a>
-          </li>
-          <li>
-            <a class="card" href="https://github.com/StephRoos/cadence">
+
+            <a class="card reveal" href="https://github.com/StephRoos/cadence" target="_blank" rel="noopener">
+              <span class="card-tag mono">javascript</span>
               <h3>Cadence</h3>
               <p>Studio de dataviz narrative animée : scénariser un graphique comme un récit.</p>
-              <span class="tag">JavaScript</span>
+              <span class="card-link">Voir le dépôt →</span>
             </a>
-          </li>
-          <li>
-            <a class="card" href="https://data-mastery-platform.vercel.app">
+
+            <a
+              class="card reveal"
+              href="https://data-mastery-platform.vercel.app"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="card-tag mono">formation</span>
               <h3>Data Mastery</h3>
-              <p>
-                Plateforme de formation qui va de la donnée brute au dashboard BI, en six modules
-                progressifs.
-              </p>
-              <span class="tag">Formation</span>
+              <p>Plateforme de formation qui va de la donnée brute au dashboard BI, en six modules.</p>
+              <span class="card-link">Ouvrir la plateforme →</span>
             </a>
-          </li>
-          <li>
-            <a class="card" href="https://github.com/StephRoos/Projet_velib">
+
+            <a
+              class="card reveal"
+              href="https://github.com/StephRoos/Projet_velib"
+              target="_blank"
+              rel="noopener"
+            >
+              <span class="card-tag mono">python</span>
               <h3>Vélib'</h3>
-              <p>
-                Analyse de la disponibilité des stations parisiennes, du notebook au déploiement
-                sur AWS.
-              </p>
-              <span class="tag">Python</span>
+              <p>Analyse de la disponibilité des stations parisiennes, du notebook au déploiement sur AWS.</p>
+              <span class="card-link">Voir le dépôt →</span>
             </a>
-          </li>
-        </ul>
+          </div>
+        </div>
       </section>
 
-      <section id="parcours">
-        <h2>Parcours</h2>
-        <p>
-          Ingénieur civil électromécanicien (École polytechnique de Bruxelles, ULB). Une vingtaine
-          d'années en production et maintenance multi-sites, dont plusieurs en Inde et en Chine.
-          Depuis 2020 chez Höganäs, en charge de la durabilité et des services analytiques du site
-          d'Ath.
-        </p>
-        <p>
-          Côté données : Python, pandas, scikit-learn, SQL, D3. Le fil rouge reste le même,
-          comprendre un système physique et le rendre lisible à ceux qui le pilotent.
-        </p>
-      </section>
-
-      <section id="contact">
-        <h2>Contact</h2>
-        <p>
-          Le plus simple est GitHub :
-          <a href="https://github.com/StephRoos">github.com/StephRoos</a>.
-        </p>
+      <section class="section section-alt" id="contact">
+        <div class="container reveal">
+          <h2 class="section-title">Contact</h2>
+          <p class="contact-lead">
+            Le plus simple reste GitHub : les dépôts, les issues, tout y est ouvert.
+          </p>
+          <div class="social-links">
+            <a
+              class="social-link"
+              href="https://github.com/StephRoos"
+              target="_blank"
+              rel="noopener"
+              aria-label="GitHub"
+            >
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <p>Stéphane Roos</p>
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>Stéphane Roos</p>
+        <p class="mono">HTML, CSS, un peu de JavaScript</p>
+      </div>
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>
