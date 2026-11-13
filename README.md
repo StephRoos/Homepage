@@ -4,17 +4,23 @@ Site personnel statique, en HTML, CSS et JavaScript, sans framework ni build.
 
 Réalisé comme projet final du module A (WebDev Foundation) du cours
 « D3 ❤️ React » de Yan Holtz, dans la charte graphique Anthemion v2.0
-(`CANOPEE/2 CASQUETTES/Professionnel/createur-contenu/anthemion/identite-visuelle/`),
-avec l'inspiration de [ckntav.github.io](https://ckntav.github.io/).
+(`CANOPEE/2 CASQUETTES/Professionnel/createur-contenu/anthemion/identite-visuelle/`).
 
 ## Structure
 
 ```
-index.html    page unique : accueil, à propos, projets, contact
+index.html    page unique : accueil, à propos, ce que je fais, parcours, projets, contact
 styles.css    tokens Anthemion, thème sombre par défaut, mise en page responsive
 main.js       thème persistant, menu mobile, réseau de particules, typewriter, révélations au scroll
 favicon.svg   monogramme aux couleurs de la charte
 ```
+
+## Inspirations
+
+| Source | Ce qui en vient |
+|---|---|
+| [ckntav.github.io](https://ckntav.github.io/) | nav fixe, bascule clair/sombre, champ de particules dans le hero, typewriter, cartes de portfolio |
+| [yan-holtz.com](https://www.yan-holtz.com/) | hero centré avec pastille « Bonjour », titre display, rangées numérotées 01/02/03, frise chronologique du parcours, libellés de section en mono |
 
 ## Charte appliquée
 
@@ -29,9 +35,8 @@ favicon.svg   monogramme aux couleurs de la charte
 - Dark first : le mode sombre est le défaut, le mode clair est disponible
   via le bouton et mémorisé dans `localStorage`.
 
-Deux valeurs n'existent pas dans la charte et ont été dérivées : la bordure en mode
-clair (`rgba(100, 116, 139, 0.25)`, calculée depuis le Slate) et le fond alterné
-sombre (`#1a1a28`, un cran plus sombre que Ink Black).
+Une seule valeur n'existe pas dans la charte : la bordure en mode clair,
+dérivée du Slate (`rgba(100, 116, 139, 0.25)`).
 
 ## Prévisualisation locale
 

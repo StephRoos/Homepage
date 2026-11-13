@@ -31,6 +31,8 @@
 
         <ul class="nav-links" id="nav-links">
           <li><a href="#a-propos">à propos</a></li>
+          <li><a href="#metier">ce que je fais</a></li>
+          <li><a href="#parcours">parcours</a></li>
           <li><a href="#projets">projets</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
@@ -57,15 +59,21 @@
     <header class="hero" id="accueil">
       <canvas class="hero-canvas" id="particles" aria-hidden="true"></canvas>
       <div class="hero-content">
-        <p class="hero-kicker mono">ingénieur civil électromécanicien</p>
-        <h1 class="hero-title">Bonjour, je suis <strong>Stéphane</strong>.</h1>
+        <span class="chip">Bonjour</span>
+        <h1 class="hero-title">Ingénieur industriel,<br><strong>passé à la donnée</strong>.</h1>
         <p class="hero-subtitle">
           <span id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
         </p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#projets">Voir les projets</a>
-          <a class="btn btn-ghost" href="https://github.com/StephRoos" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn btn-ghost" href="#contact">Me contacter</a>
         </div>
+        <a class="hero-social" href="https://github.com/StephRoos" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0112 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z" />
+          </svg>
+          <span class="mono">github.com/StephRoos</span>
+        </a>
       </div>
       <a class="scroll-hint" href="#a-propos" aria-label="Descendre vers la section à propos">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -77,11 +85,11 @@
     <main>
       <section class="section section-alt" id="a-propos">
         <div class="container reveal">
+          <p class="eyebrow">à propos</p>
           <div class="about-grid">
             <div class="about-mark" aria-hidden="true">SR</div>
             <div class="about-text">
-              <h2 class="section-title">À propos</h2>
-              <p class="about-subtitle mono">ingénieur industriel × données × pédagogie</p>
+              <p class="about-subtitle">ingénieur industriel × données × pédagogie</p>
               <p>
                 Vingt-cinq ans de production et de maintenance, multi-sites, avec des passages en Inde
                 et en Chine. Depuis 2020 chez Höganäs, en charge de la durabilité et des services
@@ -105,9 +113,82 @@
         </div>
       </section>
 
+      <section class="section" id="metier">
+        <div class="container">
+          <p class="eyebrow reveal">ce que je fais</p>
+          <div class="steps">
+            <article class="step reveal">
+              <span class="step-number mono">01</span>
+              <div class="step-body">
+                <h3>Énergie et durabilité industrielle</h3>
+                <p>
+                  Pilotage de la durabilité et des services analytiques du site Höganäs d'Ath :
+                  indicateurs, consommation, fiabilité de la mesure.
+                </p>
+              </div>
+            </article>
+            <article class="step reveal">
+              <span class="step-number mono">02</span>
+              <div class="step-body">
+                <h3>Données et visualisation</h3>
+                <p>
+                  Python, pandas, scikit-learn, D3 : extraire, fiabiliser, puis rendre un procédé
+                  lisible à ceux qui le pilotent.
+                </p>
+              </div>
+            </article>
+            <article class="step reveal">
+              <span class="step-number mono">03</span>
+              <div class="step-body">
+                <h3>Formation et pédagogie</h3>
+                <p>
+                  Modules de formation data, vulgarisation visuelle de sujets complexes, sans
+                  sacrifier la rigueur.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-alt" id="parcours">
+        <div class="container reveal">
+          <p class="eyebrow">parcours</p>
+          <ol class="timeline">
+            <li class="timeline-item">
+              <span class="timeline-date mono">avant 2020</span>
+              <div class="timeline-body">
+                <h3>Production et maintenance</h3>
+                <p>Une vingtaine d'années multi-sites et multi-industries, dont plusieurs en Inde et en Chine.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-date mono">depuis 2020</span>
+              <div class="timeline-body">
+                <h3>Höganäs, site d'Ath</h3>
+                <p>Sustainability &amp; Analytical Services Manager, binôme Digital &amp; Énergie.</p>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <span class="timeline-date mono">aujourd'hui</span>
+              <div class="timeline-body">
+                <h3>Data et dataviz</h3>
+                <p>Ingénieur civil électromécanicien (ULB), en montée en compétence sur D3 et React.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
       <section class="section" id="projets">
         <div class="container">
-          <h2 class="section-title reveal">Projets</h2>
+          <div class="section-head reveal">
+            <p class="eyebrow">projets</p>
+            <p class="section-note">
+              Travaux ouverts sur GitHub et plateformes publiques. Le code est lisible, les données
+              aussi.
+            </p>
+          </div>
           <div class="cards">
             <a
               class="card is-featured reveal"
@@ -160,7 +241,7 @@
 
       <section class="section section-alt" id="contact">
         <div class="container reveal">
-          <h2 class="section-title">Contact</h2>
+          <p class="eyebrow">contact</p>
           <p class="contact-lead">
             Le plus simple reste GitHub : les dépôts, les issues, tout y est ouvert.
           </p>
