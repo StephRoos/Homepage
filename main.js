@@ -74,9 +74,9 @@ if ("IntersectionObserver" in window) {
 // Typewriter for the hero subtitle
 const typewriter = document.getElementById("typewriter");
 const phrases = [
-  "je transforme des procédés industriels en visualisations lisibles.",
-  "ingénieur industriel, données et pédagogie.",
-  "courbes de charge, dashboards, modèles prédictifs.",
+  "I turn industrial processes into visualizations people can read.",
+  "Industrial engineer, data and teaching.",
+  "Load curves, dashboards, predictive models.",
 ];
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 

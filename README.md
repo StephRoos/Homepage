@@ -1,51 +1,51 @@
 # Homepage
 
-Site personnel statique, en HTML, CSS et JavaScript, sans framework ni build.
+Static personal site in HTML, CSS and JavaScript, with no framework and no build step.
 
-Réalisé comme projet final du module A (WebDev Foundation) du cours
-« D3 ❤️ React » de Yan Holtz, dans la charte graphique Anthemion v2.0
+Built as the final project of module A (WebDev Foundation) of the
+"D3 ❤️ React" course by Yan Holtz, following the Anthemion v2.0 graphic charter
 (`CANOPEE/2 CASQUETTES/Professionnel/createur-contenu/anthemion/identite-visuelle/`).
 
 ## Structure
 
 ```
-index.html    page unique : accueil, à propos, ce que je fais, parcours, projets, contact
-styles.css    tokens Anthemion, thème sombre par défaut, mise en page responsive
-main.js       thème persistant, menu mobile, réseau de particules, typewriter, révélations au scroll
-favicon.svg   monogramme aux couleurs de la charte
+index.html    single page: hero, about, what I do, background, projects, contact
+styles.css    Anthemion tokens, dark theme by default, responsive layout
+main.js       persisted theme, mobile menu, particle field, typewriter, scroll reveals
+favicon.svg   monogram in the charter colours
 ```
 
 ## Inspirations
 
-| Source | Ce qui en vient |
+| Source | What comes from it |
 |---|---|
-| [ckntav.github.io](https://ckntav.github.io/) | nav fixe, bascule clair/sombre, champ de particules dans le hero, typewriter, cartes de portfolio |
-| [yan-holtz.com](https://www.yan-holtz.com/) | hero centré avec pastille « Bonjour », titre display, rangées numérotées 01/02/03, frise chronologique du parcours, libellés de section en mono |
+| [ckntav.github.io](https://ckntav.github.io/) | fixed nav, light/dark toggle, particle field in the hero, typewriter, portfolio cards |
+| [yan-holtz.com](https://www.yan-holtz.com/) | centred hero with a "Hello" chip, display headline, numbered 01/02/03 rows, background timeline, mono section labels |
 
-## Charte appliquée
+## Charter applied
 
-- Couleurs : Bleu Paon `#067790`, Teal Light `#0A9AB5`, Teal Pale `#E0F4F8`,
+- Colours: Bleu Paon `#067790`, Teal Light `#0A9AB5`, Teal Pale `#E0F4F8`,
   Orange Brûlé `#C06A30`, Amber Soft `#E8A96A`, Ink Black `#1e1e2e`,
   Surface Dark `#262637`, Border Dark `#313244`, Slate `#64748B`, Slate Light `#94A3B8`,
   Snow `#FAFBFC`, White Smoke `#F5F5F5`.
-- Typographie Geist Sans et Geist Mono (Google Fonts), titres en 700 avec
-  `letter-spacing: -0.025em`, labels en majuscules `0.1em`.
-- Composants : boutons primary/outline radius 8px, badges primary et accent,
-  cards radius 14px avec glow teal au survol, fade-in + slide-up à 500 ms.
-- Dark first : le mode sombre est le défaut, le mode clair est disponible
-  via le bouton et mémorisé dans `localStorage`.
+- Typography: Geist Sans and Geist Mono (Google Fonts), headings at 700 with
+  `letter-spacing: -0.025em`, labels uppercase at `0.1em`.
+- Components: primary/outline buttons with 8px radius, primary and accent badges,
+  14px cards with a teal glow on hover, 500ms fade-in and slide-up.
+- Dark first: the dark theme is the default, the light theme is one click away
+  and remembered in `localStorage`.
 
-Une seule valeur n'existe pas dans la charte : la bordure en mode clair,
-dérivée du Slate (`rgba(100, 116, 139, 0.25)`).
+One value is absent from the charter: the light-mode border, derived from Slate
+(`rgba(100, 116, 139, 0.25)`).
 
-## Prévisualisation locale
+## Local preview
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Puis http://localhost:8000.
+Then http://localhost:8000.
 
-## Déploiement
+## Deployment
 
-GitHub Pages, branche `main`, racine du dépôt : `Settings > Pages > Deploy from a branch`.
+GitHub Pages, `main` branch, repository root: `Settings > Pages > Deploy from a branch`.

@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr" data-theme="dark">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stéphane Roos | Ingénieur industriel et dataviz</title>
+    <title>Stéphane Roos | Industrial engineer and dataviz</title>
     <meta
       name="description"
-      content="Ingénieur industriel, passé à la donnée et à la visualisation. Projets open source, parcours et contact."
+      content="Industrial engineer turned data and visualization. Open source projects, background and contact."
     >
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,18 +27,18 @@
   <body>
     <nav class="navbar">
       <div class="nav-container">
-        <a class="nav-brand" href="#accueil">Stéphane Roos</a>
+        <a class="nav-brand" href="#home">Stéphane Roos</a>
 
         <ul class="nav-links" id="nav-links">
-          <li><a href="#a-propos">à propos</a></li>
-          <li><a href="#metier">ce que je fais</a></li>
-          <li><a href="#parcours">parcours</a></li>
-          <li><a href="#projets">projets</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#work">what I do</a></li>
+          <li><a href="#background">background</a></li>
+          <li><a href="#projects">projects</a></li>
           <li><a href="#contact">contact</a></li>
         </ul>
 
         <div class="nav-actions">
-          <button class="theme-toggle" id="theme-toggle" aria-label="Basculer le thème clair ou sombre">
+          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle light or dark theme">
             <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <circle cx="12" cy="12" r="5" />
               <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42" />
@@ -47,7 +47,7 @@
               <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z" />
             </svg>
           </button>
-          <button class="menu-toggle" id="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+          <button class="menu-toggle" id="menu-toggle" aria-label="Open menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -56,7 +56,7 @@
       </div>
     </nav>
 
-    <header class="hero" id="accueil">
+    <header class="hero" id="home">
       <canvas class="hero-canvas" id="particles" aria-hidden="true"></canvas>
       <div class="hero-content">
         <p class="hero-name">
@@ -65,14 +65,14 @@
           Roos
         </p>
         <span class="hero-rule" aria-hidden="true"></span>
-        <span class="chip">Bonjour</span>
-        <h1 class="hero-title">Ingénieur industriel,<br><strong>passé à la donnée</strong>.</h1>
+        <span class="chip">Hello</span>
+        <h1 class="hero-title">Industrial engineer,<br><strong>now working with data</strong>.</h1>
         <p class="hero-subtitle">
           <span id="typewriter"></span><span class="cursor" aria-hidden="true">|</span>
         </p>
         <div class="hero-actions">
-          <a class="btn btn-primary" href="#projets">Voir les projets</a>
-          <a class="btn btn-ghost" href="#contact">Me contacter</a>
+          <a class="btn btn-primary" href="#projects">See the projects</a>
+          <a class="btn btn-ghost" href="#contact">Get in touch</a>
         </div>
         <a class="hero-social" href="https://github.com/StephRoos" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
@@ -81,7 +81,7 @@
           <span class="mono">github.com/StephRoos</span>
         </a>
       </div>
-      <a class="scroll-hint" href="#a-propos" aria-label="Descendre vers la section à propos">
+      <a class="scroll-hint" href="#about" aria-label="Scroll to the about section">
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
           <path d="M12 5v14M5 12l7 7 7-7" />
         </svg>
@@ -89,21 +89,21 @@
     </header>
 
     <main>
-      <section class="section section-alt" id="a-propos">
+      <section class="section section-alt" id="about">
         <div class="container reveal">
-          <p class="eyebrow">à propos</p>
+          <p class="eyebrow">about</p>
           <div class="about-grid">
             <div class="about-mark" aria-hidden="true">SR</div>
             <div class="about-text">
-              <p class="about-subtitle">ingénieur industriel × données × pédagogie</p>
+              <p class="about-subtitle">industrial engineer × data × teaching</p>
               <p>
-                Vingt-cinq ans de production et de maintenance, multi-sites, avec des passages en Inde
-                et en Chine. Depuis 2020 chez Höganäs, en charge de la durabilité et des services
-                analytiques du site d'Ath.
+                Twenty-five years in production and maintenance, across several sites and industries,
+                including spells in India and China. At Höganäs since 2020, in charge of
+                sustainability and analytical services for the Ath plant.
               </p>
               <p>
-                Côté données : Python, pandas, scikit-learn, SQL, D3. Le fil rouge ne change pas,
-                comprendre un système physique et le rendre lisible à ceux qui le pilotent.
+                On the data side: Python, pandas, scikit-learn, SQL, D3. The thread never changes,
+                understand a physical system and make it readable to the people who run it.
               </p>
               <div class="keywords">
                 <span class="kw">industrial engineering</span>
@@ -113,43 +113,43 @@
                 <span class="kw">d3.js</span>
                 <span class="kw">energy</span>
               </div>
-              <p class="location">basé en Belgique, ouvert au télétravail</p>
+              <p class="location">based in Belgium, open to remote work</p>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="section" id="metier">
+      <section class="section" id="work">
         <div class="container">
-          <p class="eyebrow reveal">ce que je fais</p>
+          <p class="eyebrow reveal">what I do</p>
           <div class="steps">
             <article class="step reveal">
               <span class="step-number mono">01</span>
               <div class="step-body">
-                <h3>Énergie et durabilité industrielle</h3>
+                <h3>Industrial energy and sustainability</h3>
                 <p>
-                  Pilotage de la durabilité et des services analytiques du site Höganäs d'Ath :
-                  indicateurs, consommation, fiabilité de la mesure.
+                  Running sustainability and analytical services for the Höganäs plant in Ath:
+                  indicators, consumption, measurement reliability.
                 </p>
               </div>
             </article>
             <article class="step reveal">
               <span class="step-number mono">02</span>
               <div class="step-body">
-                <h3>Données et visualisation</h3>
+                <h3>Data and visualization</h3>
                 <p>
-                  Python, pandas, scikit-learn, D3 : extraire, fiabiliser, puis rendre un procédé
-                  lisible à ceux qui le pilotent.
+                  Python, pandas, scikit-learn, D3: extract, make reliable, then turn a process into
+                  something the people who run it can actually read.
                 </p>
               </div>
             </article>
             <article class="step reveal">
               <span class="step-number mono">03</span>
               <div class="step-body">
-                <h3>Formation et pédagogie</h3>
+                <h3>Teaching and pedagogy</h3>
                 <p>
-                  Modules de formation data, vulgarisation visuelle de sujets complexes, sans
-                  sacrifier la rigueur.
+                  Data training modules, visual explanations of complex topics, without trading away
+                  rigor.
                 </p>
               </div>
             </article>
@@ -157,42 +157,41 @@
         </div>
       </section>
 
-      <section class="section section-alt" id="parcours">
+      <section class="section section-alt" id="background">
         <div class="container reveal">
-          <p class="eyebrow">parcours</p>
+          <p class="eyebrow">background</p>
           <ol class="timeline">
             <li class="timeline-item">
-              <span class="timeline-date mono">avant 2020</span>
+              <span class="timeline-date mono">before 2020</span>
               <div class="timeline-body">
-                <h3>Production et maintenance</h3>
-                <p>Une vingtaine d'années multi-sites et multi-industries, dont plusieurs en Inde et en Chine.</p>
+                <h3>Production and maintenance</h3>
+                <p>About twenty years across sites and industries, including several in India and China.</p>
               </div>
             </li>
             <li class="timeline-item">
-              <span class="timeline-date mono">depuis 2020</span>
+              <span class="timeline-date mono">since 2020</span>
               <div class="timeline-body">
-                <h3>Höganäs, site d'Ath</h3>
-                <p>Sustainability &amp; Analytical Services Manager, binôme Digital &amp; Énergie.</p>
+                <h3>Höganäs, Ath plant</h3>
+                <p>Sustainability &amp; Analytical Services Manager, paired with Digital &amp; Energy.</p>
               </div>
             </li>
             <li class="timeline-item">
-              <span class="timeline-date mono">aujourd'hui</span>
+              <span class="timeline-date mono">today</span>
               <div class="timeline-body">
-                <h3>Data et dataviz</h3>
-                <p>Ingénieur civil électromécanicien (ULB), en montée en compétence sur D3 et React.</p>
+                <h3>Data and dataviz</h3>
+                <p>Civil electromechanical engineer (ULB), building up on D3 and React.</p>
               </div>
             </li>
           </ol>
         </div>
       </section>
 
-      <section class="section" id="projets">
+      <section class="section" id="projects">
         <div class="container">
           <div class="section-head reveal">
-            <p class="eyebrow">projets</p>
+            <p class="eyebrow">projects</p>
             <p class="section-note">
-              Travaux ouverts sur GitHub et plateformes publiques. Le code est lisible, les données
-              aussi.
+              Open work on GitHub and public platforms. The code is readable, and so is the data.
             </p>
           </div>
           <div class="cards">
@@ -203,19 +202,19 @@
               rel="noopener"
             >
               <span class="card-tag mono">dataviz</span>
-              <h3>Courbe de charge</h3>
+              <h3>Load curve</h3>
               <p>
-                Ce que votre courbe de charge essaie de vous dire : une visualisation du dataset ELMAS
-                pour le management de l'énergie industrielle.
+                What your load curve is trying to tell you: a visualization of the ELMAS dataset for
+                industrial energy management.
               </p>
-              <span class="card-link">Voir le dépôt →</span>
+              <span class="card-link">View the repository →</span>
             </a>
 
             <a class="card reveal" href="https://github.com/StephRoos/cadence" target="_blank" rel="noopener">
               <span class="card-tag mono">javascript</span>
               <h3>Cadence</h3>
-              <p>Studio de dataviz narrative animée : scénariser un graphique comme un récit.</p>
-              <span class="card-link">Voir le dépôt →</span>
+              <p>An animated narrative dataviz studio: turning a chart into a story.</p>
+              <span class="card-link">View the repository →</span>
             </a>
 
             <a
@@ -224,10 +223,10 @@
               target="_blank"
               rel="noopener"
             >
-              <span class="card-tag mono">formation</span>
+              <span class="card-tag mono">training</span>
               <h3>Data Mastery</h3>
-              <p>Plateforme de formation qui va de la donnée brute au dashboard BI, en six modules.</p>
-              <span class="card-link">Ouvrir la plateforme →</span>
+              <p>A training platform that goes from raw data to a full BI dashboard, in six modules.</p>
+              <span class="card-link">Open the platform →</span>
             </a>
 
             <a
@@ -238,8 +237,8 @@
             >
               <span class="card-tag mono">python</span>
               <h3>Vélib'</h3>
-              <p>Analyse de la disponibilité des stations parisiennes, du notebook au déploiement sur AWS.</p>
-              <span class="card-link">Voir le dépôt →</span>
+              <p>Station availability analysis in Paris, from the notebook to an AWS deployment.</p>
+              <span class="card-link">View the repository →</span>
             </a>
           </div>
         </div>
@@ -249,7 +248,7 @@
         <div class="container reveal">
           <p class="eyebrow">contact</p>
           <p class="contact-lead">
-            Le plus simple reste GitHub : les dépôts, les issues, tout y est ouvert.
+            GitHub is the simplest: repositories, issues, everything is open there.
           </p>
           <div class="social-links">
             <a
@@ -271,7 +270,7 @@
     <footer class="footer">
       <div class="container footer-inner">
         <p>Stéphane Roos</p>
-        <p class="mono">HTML, CSS, un peu de JavaScript</p>
+        <p class="mono">HTML, CSS, a bit of JavaScript</p>
       </div>
     </footer>
 
