@@ -123,12 +123,16 @@ const particles = (() => {
   let dots = [];
   let width = 0;
   let height = 0;
-  let color = "47, 93, 80";
+  let linkColor = "10, 154, 181";
+  let dotColor = "232, 169, 106";
   let frame = null;
 
   function setColor() {
-    const value = getComputedStyle(document.documentElement).getPropertyValue("--dot").trim();
-    if (value) color = value;
+    const style = getComputedStyle(document.documentElement);
+    const link = style.getPropertyValue("--particle-link-rgb").trim();
+    const dot = style.getPropertyValue("--particle-dot-rgb").trim();
+    if (link) linkColor = link;
+    if (dot) dotColor = dot;
   }
 
   function resize() {
@@ -166,7 +170,7 @@ const particles = (() => {
         const dy = dots[i].y - dots[j].y;
         const distance = Math.hypot(dx, dy);
         if (distance < linkDistance) {
-          ctx.strokeStyle = `rgba(${color}, ${0.16 * (1 - distance / linkDistance)})`;
+          ctx.strokeStyle = `rgba(${linkColor}, ${0.34 * (1 - distance / linkDistance)})`;
           ctx.lineWidth = 1;
           ctx.beginPath();
           ctx.moveTo(dots[i].x, dots[i].y);
@@ -177,7 +181,7 @@ const particles = (() => {
     }
 
     for (const dot of dots) {
-      ctx.fillStyle = `rgba(${color}, 0.55)`;
+      ctx.fillStyle = `rgba(${dotColor}, 0.65)`;
       ctx.beginPath();
       ctx.arc(dot.x, dot.y, dot.r, 0, Math.PI * 2);
       ctx.fill();

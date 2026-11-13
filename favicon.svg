@@ -1,12 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="14" fill="#12211c" />
+  <rect width="64" height="64" rx="14" fill="#1e1e2e" />
+  <circle cx="52" cy="12" r="4" fill="#c06a30" />
   <text
     x="32"
     y="43"
-    font-family="ui-sans-serif, system-ui, sans-serif"
-    font-size="28"
+    font-family="Geist, ui-sans-serif, system-ui, sans-serif"
+    font-size="27"
     font-weight="700"
-    fill="#8fc7b2"
+    letter-spacing="-0.5"
+    fill="#0a9ab5"
     text-anchor="middle"
   >SR</text>
 </svg>
