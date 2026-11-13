@@ -306,9 +306,9 @@ p {
   background: linear-gradient(90deg, var(--primary), var(--accent));
 }
 
-/* Token 5xl, pushed for the display line */
+/* Token 5xl (48px) at most: the charter caps the hero line there */
 .hero-title {
-  font-size: clamp(2.25rem, 6.4vw, 4rem);
+  font-size: clamp(1.875rem, 4.4vw, 3rem);
   margin: 0 0 1.25rem;
 }
 
